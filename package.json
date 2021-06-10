@@ -1,0 +1,32 @@
+{
+  "name": "didactic-guacamole",
+  "version": "1.0.0",
+  "description": "`````¯\\_(ツ)_/¯`````",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "mocha",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ohall/didactic-guacamole.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ohall/didactic-guacamole/issues"
+  },
+  "homepage": "https://github.com/ohall/didactic-guacamole#readme",
+  "dependencies": {
+    "@hapi/hapi": "^20.0.3",
+    "lodash": "^4.17.20",
+    "nodemon": "^2.0.7"
+  },
+  "devDependencies": {
+    "eslint": "^7.17.0",
+    "eslint-config-google": "^0.14.0",
+    "mocha": "^8.2.1"
+  }
+}
