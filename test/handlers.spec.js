@@ -17,9 +17,9 @@ describe('Handlers', () => {
       assert.equal(checkHeadersForThing(request), 'Found it!');
     });
 
-    it('should return WHAMMY! if not found', () => {
+    it('should return WRONG! if not found', () => {
       const request = {headers: {fooHeader: 'bink'}};
-      assert.equal(checkHeadersForThing(request), 'WHAMMY!');
+      assert.equal(checkHeadersForThing(request), 'WRONG!');
     });
   });
 });

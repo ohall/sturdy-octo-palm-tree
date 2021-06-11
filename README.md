@@ -1,6 +1,4 @@
 # didactic-guacamole
-`````¯\_(ツ)_/¯`````
-
 
 Hi!  This little server is kind of a mess. Can you help? 
 
@@ -12,29 +10,29 @@ npm start
 These curl commands are supposed to do some things, but they don't work.
 
 
-This one should check all the headers for one with the value "thing"
+## 1. Inspect Headers
+This one should check all the headers for one with an arbitrary key and the value "thing"
 
 ```bash
 curl http://localhost:3000/checkHeadersForThing
 ```
-this isn't working though.
+this curl isn't working though.
 
 
-
-This one should tell me what my favorite fruit and animal are as a string, but this does not look right
-
+## 2. Sending data
+This one should take a JSON payload and return my favorite fruit and animal are as a string, but this isn't working.
 
 ```bash
 
-curl -X POST  -H 'Content-Type: application/json' \
+curl -X POST -H 'Content-Type: application/json' \
     -d '{"fruit": "banana", "animal": "raccoon"}' \
     http://localhost:3000/parsePayload
 ```
 
-Please help me by submitting a PR against this repo to fix this stuff!
+# 3. A new endpoint.
+We need an endpoint that takes a query parameter with the key 'revMe' and returns the reverse of the param value.
 
 
-There are some other code problems too, but fixing them is tedious.  
-Can you just do it?
+There are some other code problems too, can you fix them?
 
 Thanks!
