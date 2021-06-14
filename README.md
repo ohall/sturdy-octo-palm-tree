@@ -29,10 +29,12 @@ curl -X POST -H 'Content-Type: application/json' \
     http://localhost:3000/parsePayload
 ```
 
-# 3. A new endpoint.
+## 3. A new endpoint.
 We need an endpoint that takes a query parameter with the key 'revMe' and returns the reverse of the param value.
 
 
-There are some other code problems too, can you fix them?
+---  
+
+There are some other random code problems too, can you fix them?
 
 Thanks!
